@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/StyleSheet/Menu.uss?fileID=7433441132597879392&amp;guid=e36f5e7554873e6458e3d8c220846965&amp;type=3#Menu" />
+    <ui:VisualElement name="Menu" style="flex-grow: 1; flex-direction: column; align-items: center; justify-content: space-between; align-self: stretch;">
+        <ui:Button text="Start" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Start" enable-rich-text="true" focusable="true" class="button" style="background-image: none;" />
+        <ui:Button text="Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Settings" class="settingButon" />
+        <ui:VisualElement name="VisualElementQuit" style="flex-grow: 1; flex-direction: column-reverse; align-self: center; align-items: auto; justify-content: flex-start;">
+            <ui:Button text="Quit" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Quit" class="quitButton" style="-unity-text-align: upper-center;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
