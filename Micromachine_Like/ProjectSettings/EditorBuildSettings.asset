@@ -6,7 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Race.unity
+    path: Assets/Scenes/real/Race.unity
     guid: 9789e29865be3414080f478abfc4aa71
+  - enabled: 1
+    path: Assets/Scenes/real/Lobby.unity
+    guid: d61e33d0ca2de3d44a937c7b4c6ee0fb
+  - enabled: 1
+    path: Assets/Scenes/real/manager.unity
+    guid: d3cf7e3a7b03d2f43bb7388c78559ebe
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
