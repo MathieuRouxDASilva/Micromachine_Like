@@ -8,16 +8,16 @@ public class Spawner : MonoBehaviour
 
     private void Start()
     {
-        List<LobbySetup> _setup = FindObjectsByType<LobbySetup>(FindObjectsInactive.Include, FindObjectsSortMode.None)
+        List<LobbySetup> _setups = FindObjectsByType<LobbySetup>(FindObjectsInactive.Include, FindObjectsSortMode.None)
             .ToList();
 
-        for (int i = 0; i < _setup.Count; i++)
+        for (int i = 0; i < _setups.Count; i++)
         {
             GameObject newtractor = Instantiate(_prefab);
 
             if (newtractor.TryGetComponent<CarShape>(out var shape))
             {
-                shape.SetProfile(_setup[i]);
+                shape.SetProfile(_setups[i]);
             }
         }
     }

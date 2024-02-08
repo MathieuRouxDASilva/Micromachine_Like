@@ -7,7 +7,7 @@ public class LobbyManager : MonoBehaviour
 {
     //list of all joined player
     [SerializeField] private List<LobbySetup> _joinedSetups = new List<LobbySetup>();
-    [SerializeField] private List<Transform> _spawnPoints = new List<Transform>();
+    [SerializeField] private List<Transform> _spawnPoints;
     
     //what happen when someone join this game 
     public void OnPlayerjoined(PlayerInput input)

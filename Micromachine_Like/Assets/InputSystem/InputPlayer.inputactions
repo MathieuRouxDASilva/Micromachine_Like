@@ -42,7 +42,7 @@
                     "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
-                    "groups": "All",
+                    "groups": "controller",
                     "action": "MoveForward",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -53,7 +53,7 @@
                     "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
                     "processors": "",
-                    "groups": "All",
+                    "groups": "controller",
                     "action": "MoveForward",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -75,7 +75,7 @@
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
-                    "groups": "All",
+                    "groups": "keyboard",
                     "action": "MoveForward",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -86,41 +86,8 @@
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
-                    "groups": "All",
+                    "groups": "keyboard",
                     "action": "MoveForward",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "Controller",
-                    "id": "925deafe-5da4-4708-a90d-94f8a73a2799",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "TurnRight",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "positive",
-                    "id": "17d43270-0d4e-42ab-8ffe-5ae791538afd",
-                    "path": "<Gamepad>/leftStick/right",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "All",
-                    "action": "TurnRight",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "negative",
-                    "id": "27bf6a1d-2ced-4ecf-bd2b-773e920b35af",
-                    "path": "<Gamepad>/leftStick/left",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "All",
-                    "action": "TurnRight",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -141,7 +108,7 @@
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
-                    "groups": "All",
+                    "groups": "keyboard",
                     "action": "TurnRight",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -152,10 +119,21 @@
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
-                    "groups": "All",
+                    "groups": "keyboard",
                     "action": "TurnRight",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "4de9036f-4a7d-4af2-bc8b-18deed8126d2",
+                    "path": "<Gamepad>/leftStick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "controller",
+                    "action": "TurnRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -174,7 +152,7 @@
                 },
                 {
                     "name": "Confirm",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "b1b056a1-2108-48ee-a87d-2ece53ba371e",
                     "expectedControlType": "Button",
                     "processors": "",
@@ -189,7 +167,7 @@
                     "path": "<Gamepad>/leftStick/x",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "controller",
                     "action": "Change",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -211,7 +189,7 @@
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "keyboard",
                     "action": "Change",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -222,7 +200,7 @@
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "keyboard",
                     "action": "Change",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -233,7 +211,7 @@
                     "path": "<Gamepad>/dpad/x",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "controller",
                     "action": "Change",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -244,7 +222,7 @@
                     "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "controller",
                     "action": "Confirm",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -255,7 +233,7 @@
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "keyboard",
                     "action": "Confirm",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -268,6 +246,28 @@
             "name": "All",
             "bindingGroup": "All",
             "devices": []
+        },
+        {
+            "name": "controller",
+            "bindingGroup": "controller",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "keyboard",
+            "bindingGroup": "keyboard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
         }
     ]
 }

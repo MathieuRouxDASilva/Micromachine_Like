@@ -17,10 +17,8 @@ public class InputSystem : MonoBehaviour
 
     private void Update()
     {
-        _rb.velocity += Vector3.forward * IsMovingForward;
-        _rb.velocity += Vector3.right * IsTurningRight;
-
-
+        _rb.velocity += Vector3.forward * (IsMovingForward * Time.deltaTime);
+        _rb.velocity += Vector3.left * (IsTurningRight * Time.deltaTime);
     }
 
     public void OnMoveForward(InputValue value)

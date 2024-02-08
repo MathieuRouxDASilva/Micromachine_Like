@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class LobbySetup : MonoBehaviour
 {
 
-    [SerializeField] private List<LobbyProfile> _profile;
+    [SerializeField] private List<LobbyProfile> _profile = new List<LobbyProfile>();
     [SerializeField] private GameObject _body;
 
     public Action OnReady;
