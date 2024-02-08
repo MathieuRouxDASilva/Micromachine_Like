@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,10 +10,19 @@ public class InputSystem : MonoBehaviour
     public float IsMovingBackward = 0f;
     public float IsTurningLeft = 0f;
     public float IsTurningRight = 0f;
-    
+    [SerializeField] private Rigidbody _rb;
     
     //input system
-    
+
+
+    private void Update()
+    {
+        _rb.velocity += Vector3.forward * IsMovingForward;
+        _rb.velocity += Vector3.right * IsTurningRight;
+
+
+    }
+
     public void OnMoveForward(InputValue value)
     {
         IsMovingForward = value.Get<float>();

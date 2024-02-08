@@ -1,9 +1,6 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class Spawner : MonoBehaviour
 {
@@ -23,11 +20,5 @@ public class Spawner : MonoBehaviour
                 shape.SetProfile(_setup[i]);
             }
         }
-    }
-
-
-    public void OnPlayerJoined(PlayerInput input)
-    {
-        Debug.Log("olololololololol");
     }
 }

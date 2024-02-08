@@ -1,10 +1,7 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using Object = UnityEngine.Object;
 
 public class LobbySetup : MonoBehaviour
 {
@@ -30,7 +27,7 @@ public class LobbySetup : MonoBehaviour
     {
         LoadNewModel();
     }
-    void OnChange(InputValue value)
+    private void OnChange(InputValue value)
     {
         float v = value.Get<float>();
         if (Mathf.Abs(v) == 1f)
@@ -50,7 +47,7 @@ public class LobbySetup : MonoBehaviour
         LoadNewModel();
     }
 
-    void OnSelect(InputValue value)
+    private void OnConfirm(InputValue value)
     {
         _ready = true;
         OnReady?.Invoke();
@@ -60,6 +57,7 @@ public class LobbySetup : MonoBehaviour
     {
         Destroy(_body);
         _body = Instantiate(_profile[_modelIndex].model, transform);
+        Debug.Log("instanciate" + _body);
     }
 
     public void BindInput(PlayerInput input)

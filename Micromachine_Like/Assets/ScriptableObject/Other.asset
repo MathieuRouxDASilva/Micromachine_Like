@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: Other
   m_EditorClassIdentifier: 
   model: {fileID: 919132149155446097, guid: 00db26331713e5f47a31cc7dd6b042a9, type: 3}
-  modelSprite: {fileID: 0}
-  name: 
+  name: firetruck

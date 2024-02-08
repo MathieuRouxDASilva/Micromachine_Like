@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -24,26 +23,27 @@ public class LobbyManager : MonoBehaviour
             setup.BindInput(input);
             
             setup.OnReady += CheckEveryonIsReady;
-            
+            Debug.Log(setup);
             _joinedSetups.Add(setup);
+            
             
            
             DontDestroyOnLoad(setup);
-            Debug.Log("1");
+            
         }
     }
 
     private void CheckEveryonIsReady()
     {
         //check if ther is at leat a single player in game
-        if (_joinedSetups.Count < 1)
+        if (_joinedSetups.Count <= 0)
         {
             return;
         }
 
         //check if everyone is ready
         bool everyoneIsReady = true;
-        foreach (LobbySetup setup in _joinedSetups)
+        foreach (var setup in _joinedSetups)
         {
             if (!setup.Ready)
             {

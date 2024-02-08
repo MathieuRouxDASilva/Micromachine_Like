@@ -13,13 +13,14 @@ GameObject:
   - component: {fileID: 4293059418749862273}
   - component: {fileID: 6883279959190314562}
   - component: {fileID: 2681029835022927440}
-  m_Layer: 0
+  - component: {fileID: -8374810832959696314}
+  m_Layer: 8
   m_Name: Drive
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1322742385973146543
 Transform:
   m_ObjectHideFlags: 0
@@ -89,8 +90,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_NeverAutoSwitchControlSchemes: 1
+  m_DefaultControlScheme: All
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -129,6 +130,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _body: {fileID: 4416008117038526772}
   _playerInput: {fileID: 4293059418749862273}
+--- !u!114 &-8374810832959696314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384851732124070419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d69f63fd59f66664fb41fafe201553bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsMovingForward: 0
+  IsMovingBackward: 0
+  IsTurningLeft: 0
+  IsTurningRight: 0
+  _rb: {fileID: 1487498012990898085}
 --- !u!1001 &3569566894578961509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -187,10 +205,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8569518100099689332, guid: bde0dee6e0eb8c84e93e936f69b9658b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -6899449840304533443, guid: bde0dee6e0eb8c84e93e936f69b9658b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -4819223349682164798, guid: bde0dee6e0eb8c84e93e936f69b9658b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -1328860500621903259, guid: bde0dee6e0eb8c84e93e936f69b9658b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bde0dee6e0eb8c84e93e936f69b9658b,
         type: 3}
       propertyPath: m_Name
       value: Body
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bde0dee6e0eb8c84e93e936f69b9658b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7626630938287245856, guid: bde0dee6e0eb8c84e93e936f69b9658b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
