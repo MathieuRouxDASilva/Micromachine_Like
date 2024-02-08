@@ -11,14 +11,18 @@ public class InputSystem : MonoBehaviour
     public float IsTurningLeft = 0f;
     public float IsTurningRight = 0f;
     [SerializeField] private Rigidbody _rb;
-    
+
+    private int s = 400;
     //input system
 
 
     private void Update()
     {
-        _rb.velocity += Vector3.forward * (IsMovingForward * Time.deltaTime);
-        _rb.velocity += Vector3.left * (IsTurningRight * Time.deltaTime);
+        _rb.velocity += Vector3.forward * (IsMovingForward * Time.deltaTime * 50);
+        _rb.velocity += Vector3.right * IsTurningRight;
+        
+        
+        
     }
 
     public void OnMoveForward(InputValue value)

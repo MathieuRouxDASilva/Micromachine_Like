@@ -1,11 +1,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Spawner : MonoBehaviour
 {
     [SerializeField] private GameObject _prefab;
-
+    [SerializeField] private List<Transform> spawnPoints;
     private void Start()
     {
         List<LobbySetup> _setups = FindObjectsByType<LobbySetup>(FindObjectsInactive.Include, FindObjectsSortMode.None)
@@ -18,6 +19,7 @@ public class Spawner : MonoBehaviour
             if (newtractor.TryGetComponent<CarShape>(out var shape))
             {
                 shape.SetProfile(_setups[i]);
+                shape.transform.position = spawnPoints[i].position;
             }
         }
     }
