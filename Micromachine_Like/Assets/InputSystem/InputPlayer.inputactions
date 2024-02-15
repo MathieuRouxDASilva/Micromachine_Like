@@ -51,7 +51,7 @@
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
-                    "groups": "keyboard",
+                    "groups": "keyboard;All",
                     "action": "MoveForward",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -62,7 +62,7 @@
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
-                    "groups": "keyboard",
+                    "groups": "keyboard;All",
                     "action": "MoveForward",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -84,7 +84,7 @@
                     "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
                     "processors": "",
-                    "groups": "controller",
+                    "groups": "controller;All",
                     "action": "MoveForward",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -95,7 +95,7 @@
                     "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
-                    "groups": "controller",
+                    "groups": "controller;All",
                     "action": "MoveForward",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -117,7 +117,7 @@
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
-                    "groups": "keyboard",
+                    "groups": "keyboard;All",
                     "action": "TurnRight",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -128,7 +128,7 @@
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
-                    "groups": "keyboard",
+                    "groups": "keyboard;All",
                     "action": "TurnRight",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -139,7 +139,7 @@
                     "path": "<Gamepad>/leftStick/x",
                     "interactions": "",
                     "processors": "",
-                    "groups": "controller",
+                    "groups": "controller;All",
                     "action": "TurnRight",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -147,10 +147,10 @@
                 {
                     "name": "",
                     "id": "ce89a0b6-2ae0-441b-9af7-ee6f4c5100f9",
-                    "path": "<Gamepad>/leftTrigger",
+                    "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
-                    "groups": "controller",
+                    "groups": "controller;All",
                     "action": "Brake",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -161,7 +161,7 @@
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
-                    "groups": "keyboard",
+                    "groups": "keyboard;All",
                     "action": "Brake",
                     "isComposite": false,
                     "isPartOfComposite": false

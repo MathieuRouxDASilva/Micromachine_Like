@@ -15,7 +15,7 @@ public class Spawner : MonoBehaviour
 
         for (int i = 0; i < _setups.Count; i++)
         {
-            GameObject newtractor = Instantiate(_prefab);
+            GameObject newtractor = Instantiate(_prefab); //a changer je pense
 
             if (newtractor.TryGetComponent<CarShape>(out var shape))
             {

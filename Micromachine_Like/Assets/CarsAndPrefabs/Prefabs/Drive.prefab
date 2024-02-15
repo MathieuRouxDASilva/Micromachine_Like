@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 1322742385973146543}
   - component: {fileID: 4293059418749862273}
   - component: {fileID: 2681029835022927440}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Drive
-  m_TagString: Car
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: 4bb0e94133925314988301bc2438d3bf,
     type: 3}
-  m_NotificationBehavior: 0
+  m_NotificationBehavior: 1
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -61,7 +61,7 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 1
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: controller
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -140,22 +140,22 @@ PrefabInstance:
     - target: {fileID: -8569518100099689332, guid: bde0dee6e0eb8c84e93e936f69b9658b,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -6899449840304533443, guid: bde0dee6e0eb8c84e93e936f69b9658b,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4819223349682164798, guid: bde0dee6e0eb8c84e93e936f69b9658b,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -1328860500621903259, guid: bde0dee6e0eb8c84e93e936f69b9658b,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bde0dee6e0eb8c84e93e936f69b9658b,
         type: 3}
@@ -165,7 +165,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bde0dee6e0eb8c84e93e936f69b9658b,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bde0dee6e0eb8c84e93e936f69b9658b,
         type: 3}
@@ -175,7 +175,7 @@ PrefabInstance:
     - target: {fileID: 7626630938287245856, guid: bde0dee6e0eb8c84e93e936f69b9658b,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
