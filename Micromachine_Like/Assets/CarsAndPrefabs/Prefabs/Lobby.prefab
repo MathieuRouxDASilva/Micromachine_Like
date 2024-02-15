@@ -76,7 +76,7 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: d78729fe-0ba1-4c3b-8536-4188bdf753c3
     m_ActionName: 'Lobby/ChoseYourCar[/XInputControllerWindows/buttonSouth,/Keyboard/space]'
-  m_NeverAutoSwitchControlSchemes: 0
+  m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: controller
   m_DefaultActionMap: Lobby
   m_SplitScreenIndex: -1

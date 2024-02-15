@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
 public class Spawner : MonoBehaviour
@@ -23,4 +24,10 @@ public class Spawner : MonoBehaviour
             }
         }
     }
+
+    public void OnPlayerjoined(PlayerInput inputValue)
+    {
+        Debug.Log("0");
+    }
+    
 }

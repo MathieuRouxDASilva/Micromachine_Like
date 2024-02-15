@@ -9,11 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1322742385973146543}
-  - component: {fileID: 1487498012990898085}
   - component: {fileID: 4293059418749862273}
-  - component: {fileID: 6883279959190314562}
   - component: {fileID: 2681029835022927440}
-  - component: {fileID: -8374810832959696314}
   m_Layer: 8
   m_Name: Drive
   m_TagString: Car
@@ -37,33 +34,6 @@ Transform:
   - {fileID: 3891988935192275854}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1487498012990898085
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1384851732124070419}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4293059418749862273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,31 +61,10 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 1
-  m_DefaultControlScheme: controller
+  m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!65 &6883279959190314562
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1384851732124070419}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 0.7469223, z: 2.5799253}
-  m_Center: {x: 0, y: 0.36103448, z: 0.0023442507}
 --- !u!114 &2681029835022927440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,23 +79,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _body: {fileID: 4416008117038526772}
   _playerInput: {fileID: 4293059418749862273}
---- !u!114 &-8374810832959696314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1384851732124070419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d69f63fd59f66664fb41fafe201553bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsMovingForward: 0
-  IsMovingBackward: 0
-  IsTurningLeft: 0
-  IsTurningRight: 0
-  _rb: {fileID: 1487498012990898085}
 --- !u!1001 &3569566894578961509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -234,6 +166,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bde0dee6e0eb8c84e93e936f69b9658b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7626630938287245856, guid: bde0dee6e0eb8c84e93e936f69b9658b,
         type: 3}

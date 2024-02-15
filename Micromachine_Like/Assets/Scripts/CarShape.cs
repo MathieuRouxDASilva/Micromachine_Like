@@ -13,7 +13,7 @@ public class CarShape : MonoBehaviour
         //Shape shifting
         _profile = setup.Profile;
         Destroy(_body);
-        _body = Instantiate(_profile.model, transform);
+        _body = Instantiate(_profile.realModel, transform);
 
         _playerInput.SwitchCurrentControlScheme(setup.ControlScheme, setup.Devices);
     }

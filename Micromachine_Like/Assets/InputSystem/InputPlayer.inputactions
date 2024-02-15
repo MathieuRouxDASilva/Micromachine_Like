@@ -22,42 +22,18 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Brake",
+                    "type": "Value",
+                    "id": "d337a667-c6a7-423e-9071-08f1226f1810",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
-                {
-                    "name": "Controller",
-                    "id": "c0755671-7717-4741-898e-9133b67b6438",
-                    "path": "1DAxis(whichSideWins=1)",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "MoveForward",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "positive",
-                    "id": "98d5d9db-4b06-4328-bdd6-7a3aec297d01",
-                    "path": "<Gamepad>/rightTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "controller",
-                    "action": "MoveForward",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "negative",
-                    "id": "7b91633f-3842-44e8-a859-840337a30ddc",
-                    "path": "<Gamepad>/leftTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "controller",
-                    "action": "MoveForward",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
                 {
                     "name": "W/S",
                     "id": "c54a689d-07f8-4a48-a0ae-784662fdba4b",
@@ -92,6 +68,39 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "Controller",
+                    "id": "a1c0fe9e-21dc-4646-b254-3ba5433404bb",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveForward",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "8bc53ed7-f28d-4beb-88bf-58ede53c4198",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "controller",
+                    "action": "MoveForward",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "d67d9b2e-3c05-4c9b-bd6f-fce8099a6893",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "controller",
+                    "action": "MoveForward",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "A/D",
                     "id": "7282d63a-60ce-46d3-b256-c76a8c8bb5bd",
                     "path": "1DAxis",
@@ -105,7 +114,7 @@
                 {
                     "name": "positive",
                     "id": "fd838dd2-5835-4088-a979-caaccef73164",
-                    "path": "<Keyboard>/a",
+                    "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "keyboard",
@@ -116,7 +125,7 @@
                 {
                     "name": "negative",
                     "id": "fc4f9bd7-9aee-4671-ad1b-e9b7fe3ecf93",
-                    "path": "<Keyboard>/d",
+                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "keyboard",
@@ -132,6 +141,28 @@
                     "processors": "",
                     "groups": "controller",
                     "action": "TurnRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ce89a0b6-2ae0-441b-9af7-ee6f4c5100f9",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "controller",
+                    "action": "Brake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c661203f-f5ca-4837-8e49-6ce2e047911d",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "keyboard",
+                    "action": "Brake",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
