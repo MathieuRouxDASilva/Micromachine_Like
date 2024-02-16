@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6326959251399899173}
   - component: {fileID: 6626815847565728679}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wheel_collider_BR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,13 +55,13 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.3
     m_AsymptoteValue: 0.5
-    m_Stiffness: 4
+    m_Stiffness: 4.5
   m_SidewaysFriction:
     m_ExtremumSlip: 0.8
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.1
     m_AsymptoteValue: 0.8
-    m_Stiffness: 4
+    m_Stiffness: 4.5
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -81,7 +81,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7941433210384926127}
   - component: {fileID: 764337619845365833}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wheel_collider_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,13 +126,13 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.3
     m_AsymptoteValue: 0.5
-    m_Stiffness: 4
+    m_Stiffness: 4.5
   m_SidewaysFriction:
     m_ExtremumSlip: 0.8
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.1
     m_AsymptoteValue: 0.8
-    m_Stiffness: 4
+    m_Stiffness: 4.5
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -151,7 +151,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1058019204339313595}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Meshes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,9 +188,9 @@ GameObject:
   - component: {fileID: 7059226156855243871}
   - component: {fileID: 6320806988818374803}
   - component: {fileID: -8440749698843812052}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: F1RealModel
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -253,7 +253,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2886487893315996919}
   serializedVersion: 4
-  m_Mass: 300
+  m_Mass: 1000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 943099753979237562}
   - component: {fileID: 4091259964613383938}
   - component: {fileID: 6025848365140149987}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wheel_BR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,7 +370,7 @@ GameObject:
   - component: {fileID: 98685736895220676}
   - component: {fileID: 6770905895705122342}
   - component: {fileID: 2657160615069469043}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wheel_BL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -456,7 +456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6617729282694987011}
   - component: {fileID: 8594361545176770292}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wheel_collider_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -501,13 +501,13 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.3
     m_AsymptoteValue: 0.5
-    m_Stiffness: 4
+    m_Stiffness: 4.5
   m_SidewaysFriction:
     m_ExtremumSlip: 0.8
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.1
     m_AsymptoteValue: 0.8
-    m_Stiffness: 4
+    m_Stiffness: 4.5
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -526,7 +526,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 638740018152305545}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wheels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -562,7 +562,7 @@ GameObject:
   - component: {fileID: 1879775968979291682}
   - component: {fileID: 2095305827680628843}
   - component: {fileID: 3096728852694524824}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -672,7 +672,7 @@ GameObject:
   - component: {fileID: 5403151042095405350}
   - component: {fileID: 7361054711029268149}
   - component: {fileID: 4844588151931906025}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wheel_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -759,7 +759,7 @@ GameObject:
   - component: {fileID: 2729651824223062686}
   - component: {fileID: 5750600066554748054}
   - component: {fileID: 5531173028507503468}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wheel_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -845,7 +845,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2441731992167911922}
   - component: {fileID: 9132369581085702398}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wheel_collider_BL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -890,13 +890,13 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.3
     m_AsymptoteValue: 0.5
-    m_Stiffness: 4
+    m_Stiffness: 4.5
   m_SidewaysFriction:
     m_ExtremumSlip: 0.8
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.1
     m_AsymptoteValue: 0.8
-    m_Stiffness: 4
+    m_Stiffness: 4.5
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -915,7 +915,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6468560027678919980}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

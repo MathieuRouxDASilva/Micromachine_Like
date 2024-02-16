@@ -39,7 +39,7 @@ public class MainMenu : MonoBehaviour
     private void LoadGame(ClickEvent evnt)
     {
         Debug.Log("load");
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("Lobby");
     }
 
 

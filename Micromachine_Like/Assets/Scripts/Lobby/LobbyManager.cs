@@ -58,7 +58,7 @@ public class LobbyManager : MonoBehaviour
             {
                 setup.gameObject.SetActive(false);
             }
-            SceneManager.LoadScene("manager");
+            SceneManager.LoadScene("Race");
         }
     }
     

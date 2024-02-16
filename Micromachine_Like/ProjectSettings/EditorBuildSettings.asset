@@ -12,7 +12,10 @@ EditorBuildSettings:
     path: Assets/Scenes/real/Lobby.unity
     guid: d61e33d0ca2de3d44a937c7b4c6ee0fb
   - enabled: 1
-    path: Assets/Scenes/real/manager.unity
+    path: Assets/Scenes/real/Race.unity
     guid: d3cf7e3a7b03d2f43bb7388c78559ebe
+  - enabled: 1
+    path: Assets/Scenes/real/Menu.unity
+    guid: 85d2e50ce8baff242bc418a8f3b8f548
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
