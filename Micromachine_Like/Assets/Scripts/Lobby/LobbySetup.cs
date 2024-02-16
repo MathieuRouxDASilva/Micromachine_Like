@@ -11,7 +11,7 @@ public class LobbySetup : MonoBehaviour
 
     public Action OnReady;
     
-    private int _playerIndex;
+    public int _playerIndex;
     private string controlScheme;
     private InputDevice[] devices;
     

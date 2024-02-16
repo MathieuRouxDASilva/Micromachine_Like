@@ -16,5 +16,12 @@ public class CarShape : MonoBehaviour
         _body = Instantiate(_profile.realModel, transform);
 
         _playerInput.SwitchCurrentControlScheme(setup.ControlScheme, setup.Devices);
+        
+        //add a new culling mask depending on wich car it is
+        _playerInput.camera.cullingMask |= 1 << LayerMask.NameToLayer("CamPlayer" + (setup._playerIndex + 1));
+
+        //get each player and set they player index
+        CarControlerHandMaid carController = _body.GetComponent<CarControlerHandMaid>();
+        carController.cameraNumber = setup._playerIndex;
     }
 }
