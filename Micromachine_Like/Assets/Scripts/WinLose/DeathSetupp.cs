@@ -9,7 +9,7 @@ public class DeathSetupp : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
             LosePanel.SetActive(true);
-            Time.timeScale = 0f;
+            //Time.timeScale = 0f;
     }
     
 }
